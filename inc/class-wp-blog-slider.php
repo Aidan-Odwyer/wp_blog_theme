@@ -57,7 +57,7 @@ class WP_Blog_Slider_Widget extends WP_Widget {
 				$post_title   = get_the_title( $recent_post->ID );
 				$title        = ( ! empty( $post_title ) ) ? $post_title : __( '(no title)' );
 				$content_post = get_post($recent_post->ID);
-				$color 		  = ['blue', 'dark_blue', 'pink' ,'orange', 'green', 'red', 'grey'];
+				$color 		  = ['blue', 'dark_blue', 'pink' ,'orange', 'green', 'red', 'grey', 'violet'];
 				?>
 				
 				<div class="slide">
