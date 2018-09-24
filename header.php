@@ -1,9 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html <?php language_attributes(); ?>>
 <head>
-    <meta charset="UTF-8">
+    <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="img/icon_main.png">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
     <?php wp_head(); ?>                         <!-- підключення файлів стилей -->
@@ -23,12 +22,6 @@
                     <?php if (is_active_sidebar('sidebar-search')) { ?>
                         <?php dynamic_sidebar('sidebar-search'); ?>
                     <?php } ?>
-                    <div class="search_menu">
-                        <form action="">
-                            <input type="search" class="search_field" placeholder="" value=""/>
-                            <input type="submit" class="search_submit_text site_bc_blue" value="search" />
-                        </form>
-                    </div>
                 </div>
                 <div class="col-md-2">
                     <div class="social">

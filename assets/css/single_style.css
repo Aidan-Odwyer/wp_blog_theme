@@ -187,7 +187,7 @@ footer {
 }
 
 .comments {
-    margin-top: 17px;
+    margin-top: 57px;
 }
 
 .comments_heading {
@@ -215,11 +215,12 @@ footer {
 .comments_block {
     margin-top: 49px;
     margin-left: 28px;
+    margin-right: 100px;
 }
 
 .comment {
     margin-top: 26px;
-    margin-right: 100px;
+    /* margin-right: 100px; */
     position: relative;
     clear: both;
 }
@@ -227,6 +228,8 @@ footer {
 .comment img {
     float: left;
     margin-right: 18px;
+    height: 70px;
+    width: 70px;
 }
 
 .comment p {
@@ -238,15 +241,11 @@ footer {
     display: inline-block;
     font-size: 17px;
     font-weight: 700;
-}
-
-.comment .user_name a {
     color: #5261ac;
-    text-decoration: none;
     transition: 1s;
 }
 
-.comment .user_name a:hover {
+.comment .user_name:hover {
     opacity: 0.85;
     transition: 1s;
 }
@@ -299,4 +298,37 @@ footer {
     content: " ";
     display: table;
     clear: both;
+}
+
+.comment .depth-2, .comment .depth-3 {
+    margin-left: 50px;
+    margin-right: -50px;
+}
+
+.comment .depth-3 .hr {
+    margin-right: 10px;
+}
+
+.logged-in-as a {
+    font-family: Roboto, sans-serif;
+    font-size: 18px;
+    color: #333;
+}
+
+.logged-in-as a:first-child {
+    text-decoration: none;
+}
+
+.widget_categories ul li.current-cat {
+    padding: 10px 10px;
+    margin-left: -10px;
+    margin-right: -10px;
+    background-color: rgba(0, 174, 219, 0.85);
+    border-radius: 10px;
+}
+
+.no-comments {
+    font-family: Roboto, sans-serif;
+    font-size: 18px;
+    color: #333;
 }

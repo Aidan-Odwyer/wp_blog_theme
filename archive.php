@@ -1,13 +1,6 @@
 
 <?php get_header(); ?>     <!-- підключення файлів стилей-->
 
-<div class="row">
-    <div class="col-md-12">
-        <?php if (is_active_sidebar('sidebar-slider')) { ?>
-            <?php dynamic_sidebar('sidebar-slider'); ?>
-        <?php } ?>
-    </div>
-</div>
 </div>
 </header>
 

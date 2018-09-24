@@ -1,13 +1,6 @@
 
 <?php get_header(); ?>     <!-- підключення файлів стилей-->
 
-<div class="row">
-    <div class="col-md-12">
-        <?php if (is_active_sidebar('sidebar-slider')) { ?>
-            <?php dynamic_sidebar('sidebar-slider'); ?>
-        <?php } ?>
-    </div>
-</div>
 </div>
 </header>
 
@@ -19,9 +12,11 @@
                     <?php while ( have_posts() ) { ?>                       <!-- якщо і поки є пости отримувати доступ до них по черзі -->
                         <?php the_post(); ?>
                         
-                        <?php get_template_part( 'template-parts/content', get_post_format()); ?>
+                        <?php get_template_part( 'template-parts/content', 'search'); ?>
 
                     <?php } ?>
+                <?php } else { ?>
+                    <?php get_template_part( 'template-parts/content', 'none'); ?>
                 <?php } ?>
 
                 <div class="older">

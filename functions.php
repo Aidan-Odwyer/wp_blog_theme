@@ -120,7 +120,7 @@ add_filter('excerpt_more', function($more) {     //заміняє [...] на ...
 function wp_blog_customize_register($wp_customize) {
 
     /*Slider Title Customize*/
-    $wp_customize->add_section('slider_title_section', array(       //добавляє секцію в кастомайзері та її слаг
+    /*$wp_customize->add_section('slider_title_section', array(       //добавляє секцію в кастомайзері та її слаг
         'title'     => esc_html__('Slider title settings', 'wp_blog'),      //задає назву секції
         'priority'  => 30                                           //задає пріорітет
     ));
@@ -135,7 +135,7 @@ function wp_blog_customize_register($wp_customize) {
         'section'   => 'slider_title_section',                      //слаг секціі, в якій знаходиться поле
         'settings'  => 'slider_title',                              //слаг настройок поля
         'type'      => 'text'                                       //тип поля
-    ));
+    ));*/
 
 
     /*Social Icons Url Customize*/
@@ -629,7 +629,7 @@ function wp_blog_widget_archives() {
 add_action( 'widgets_init', 'wp_blog_widget_archives' );
 
 function page_single_styles() {
-    if ( is_page() || is_single() ) {
+    if ( is_page() || is_single() || is_search() || is_archive() ) {
         wp_enqueue_style ( 'page_single', get_template_directory_uri() . '/assets/css/single_style.css');
     }
 }
@@ -648,4 +648,56 @@ function wp_blog_reorder_comment_fields( $fields ){
             $new_fields[ $key ] = $val;
 
     return $new_fields;
+}
+
+/*---Comments---*/
+
+function wp_blog_comment($comment, $args, $depth) {
+    if ( 'div' === $args['style'] ) {
+        $tag       = 'div';
+        $add_below = 'comment';
+    } else {
+        $tag       = 'li';
+        $add_below = 'div-comment';
+    }?>
+    <<?php echo $tag; ?> <?php comment_class( empty( $args['has_children'] ) ? '' : 'parent' ); ?> id="comment-<?php comment_ID() ?>"><?php 
+    if ( 'div' != $args['style'] ) { ?>
+        <div id="div-comment-<?php comment_ID() ?>" class="comment-body"><?php
+    } ?>
+        <div class="comment-author vcard"><?php 
+            if ( $args['avatar_size'] != 0 ) {
+                echo get_avatar( $comment, $args['avatar_size'] ); 
+            }?>
+            <p class="fn user_name"><?php comment_author_link(); ?></p>
+        </div> 
+        <p class="comment-meta commentmetadata comment_date">
+            <?php echo get_comment_date('j/m/Y'); ?>
+            <?php esc_html_e(' at ', 'wp_blog'); ?>
+            <?php echo get_comment_time('g:ia'); ?>
+            <?php 
+            edit_comment_link( esc_html__( '(Edit)', 'wp_blog' ), '  ', '' ); ?>
+        </p><?php
+        if ( $comment->comment_approved == '0' ) { ?>
+            <em class="comment-awaiting-moderation"><?php esc_html_e( 'Your comment is awaiting moderation.' ); ?></em><br/><?php 
+        } ?>
+
+        <p class="comment_text"><?php echo get_comment_text(); ?></p>
+
+        <div class="hr">
+            <p class="reply"><?php 
+                    comment_reply_link( 
+                        array_merge( 
+                            $args, 
+                            array( 
+                                'add_below' => $add_below, 
+                                'depth'     => $depth, 
+                                'max_depth' => $args['max_depth'] 
+                            ) 
+                        ) 
+                    ); ?>
+            </p>
+        </div><?php 
+    if ( 'div' != $args['style'] ) : ?>
+        </div><?php 
+    endif;
 }

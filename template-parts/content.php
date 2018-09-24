@@ -51,7 +51,7 @@
         <p class="post_category"><?php esc_html_e('Category: ', 'wp_blog'); ?>
             <?php the_category(', '); ?></p>   <!-- вивід категорії даного поста -->
         <p class="com_num">
-            <img src="assets/img/comment_sign.png" alt="" class="comment_sign">
+            <img src="<?php echo get_template_directory_uri() . '/assets/img/comment_sign.png' ; ?>" alt="" class="comment_sign">
             <?php comments_number(esc_html__('No Comments', 'wp_blog'), esc_html__('1 Comment', 'wp_blog'), esc_html__('% Comments', 'wp_blog') ); ?>    <!-- вивід к-сті коментарів, коли їх 0/1/більше одного -->
         </p>
         <p class="read_more">
