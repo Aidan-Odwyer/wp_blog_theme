@@ -114,7 +114,8 @@ header .container:after {
     width: 317px;
     height: 38px;
     border: 1px solid rgba(0, 0, 1, 0.1);
-    padding-top: 4px;
+    padding-top: 0px;
+    font-size: 20px;
     font-family: "Roboto", sans-serif;
     margin-top: 27px;
     padding-left: 10px;
@@ -701,8 +702,24 @@ aside {
 
 /*---You might also like---*/
 
+.yuzo_widget_wrap {
+    margin-top: 17px;
+}
+
 .yuzo-list .image-list {
     margin-right: 10px;
+}
+
+.yuzo_widget_wrap .yuzo-list span.yuzo_text {
+    /* text-align: justify; */
+}
+
+.yuzo-list:last-child {
+    border-bottom: none;
+}
+
+.yuzo-list {
+    border-bottom-color: #C0C0C0;
 }
 
 .you_might_also_like_post {
@@ -740,6 +757,10 @@ aside {
 
 
 /*---Archives---*/
+
+.widget_wp_blog_archives {
+    margin-top: 10px;
+}
 
 .archives_posts {
     margin-top: 12px;

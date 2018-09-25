@@ -7,7 +7,6 @@
         <?php dynamic_sidebar('sidebar-main'); ?>
     <?php } ?>
 
-
     <!-- <div class="common_widget">          Інший спосіб створення віджета категорій
         <div class="common_widget_title site_bc_dark_blue">
             <h2>Categories</h2>

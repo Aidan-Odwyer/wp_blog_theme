@@ -59,16 +59,6 @@ if ( post_password_required() )
             </div><!-- .comment-list -->
         </div>
  
-        <?php
-            // Are there comments to navigate through?
-            /*if ( get_comment_pages_count() > 1 || get_option( 'page_comments' ) ) :*/
-        ?>
-        <nav class="navigation comment-navigation" role="navigation">
-            <div class="nav-previous"><?php previous_comments_link( esc_html__( '<< Older Comments', 'wp_blog' ) ); ?></div>
-            <div class="nav-next"><?php next_comments_link( esc_html__( 'Newer Comments >>', 'wp_blog' ) ); ?></div>
-        </nav><!-- .comment-navigation -->
-        <?php endif; // Check for comment navigation ?>
- 
         <?php if ( ! comments_open() && get_comments_number() ) : ?>
         <p class="no-comments"><?php esc_html_e( 'Comments are closed.' , 'wp_blog' ); ?></p>
         <?php /*endif;*/ ?>

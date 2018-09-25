@@ -119,25 +119,6 @@ add_filter('excerpt_more', function($more) {     //заміняє [...] на ...
 
 function wp_blog_customize_register($wp_customize) {
 
-    /*Slider Title Customize*/
-    /*$wp_customize->add_section('slider_title_section', array(       //добавляє секцію в кастомайзері та її слаг
-        'title'     => esc_html__('Slider title settings', 'wp_blog'),      //задає назву секції
-        'priority'  => 30                                           //задає пріорітет
-    ));
-
-    $wp_customize->add_setting('slider_title', array(               //добавляє настройки для поля на їх слаг
-        'default'   => esc_html__('Top stories', 'wp_blog'),                //задає текст поля за замовчування
-        'transport' => 'refresh'                                    //тип обновлення інформаціїї в адмінці
-    ));
-
-    $wp_customize->add_control('slider_title', array(               //добавляє поле для змін в кастомайзері
-        'label'     => esc_html__('Slider title', 'wp_blog'),               //задає заголовок поля
-        'section'   => 'slider_title_section',                      //слаг секціі, в якій знаходиться поле
-        'settings'  => 'slider_title',                              //слаг настройок поля
-        'type'      => 'text'                                       //тип поля
-    ));*/
-
-
     /*Social Icons Url Customize*/
     $wp_customize->add_section('social_urls_section', array(
         'title'     => __('Social acounts link', 'wp_blog'),
@@ -631,6 +612,9 @@ add_action( 'widgets_init', 'wp_blog_widget_archives' );
 function page_single_styles() {
     if ( is_page() || is_single() || is_search() || is_archive() ) {
         wp_enqueue_style ( 'page_single', get_template_directory_uri() . '/assets/css/single_style.css');
+    }
+    if ( is_page() || is_search() || is_archive() ) {
+        wp_enqueue_style ( 'some_fix', get_template_directory_uri() . '/assets/css/some_fix.css');
     }
 }
 add_action( 'wp_enqueue_scripts', 'page_single_styles' );

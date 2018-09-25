@@ -2,10 +2,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: wp_blog\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-13 14:44+0000\n"
-"PO-Revision-Date: 2018-09-13 14:48+0000\n"
-"Last-Translator: eterry <vasiaobukh7@gmail.com>\n"
-"Language-Team: Українська\n"
+"POT-Creation-Date: 2018-09-25 07:57+0000\n"
+"PO-Revision-Date: 2018-09-25 07:59+0000\n"
+"Last-Translator: admin <vasiaobukh7@gmail.com>\n"
+"Language-Team: Ukrainian\n"
 "Language: uk\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10 >= 2 && "
 "n%10<=4 &&(n%100<10||n%100 >= 20)? 1 : 2);\n"
@@ -14,105 +14,145 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Loco https://localise.biz/"
 
-#: functions.php:124
-msgid "Slider title settings"
-msgstr "Настройки заголовка слайдера"
-
-#: functions.php:129 inc/class-wp-blog-slider.php:29
-msgid "Top stories"
-msgstr "Головні статті"
-
-#: functions.php:134
-msgid "Slider title"
-msgstr "Заголовок слайдера"
-
-#: functions.php:143
-msgid "Social acounts link"
-msgstr "Посилання на аккаунти в соціальних мережах"
-
-#: functions.php:148
-msgid "Url facebook"
-msgstr ""
-
-#: functions.php:152
-msgid "Url instagram"
-msgstr ""
-
-#: functions.php:156
-msgid "Url twitter"
-msgstr ""
-
-#: functions.php:161
-msgid "Facebook acount link"
-msgstr "Посилання на facebook аккаунт"
-
-#: functions.php:167
-msgid "Instagram acount link"
-msgstr "Посилання на instagram аккаунт"
-
-#: functions.php:173
-msgid "Twitter acount link"
-msgstr "Посилання на twitter аккаунт"
-
-#: functions.php:181
-msgid "Copyright"
-msgstr "Копірайт"
-
-#: functions.php:185
-msgid "2018 © Copyright <a href=\"\">Eterry</a>. All rights Reserved."
-msgstr ""
-
-#: functions.php:189
-msgid "Copyright text"
-msgstr "Текст копірайту"
-
-#: functions.php:202
-msgid "Main sidebar"
-msgstr "Головний сайдбар"
-
-#: functions.php:204 functions.php:213 functions.php:222 functions.php:231
-msgid "Widgets in this area will be shown everywhere."
-msgstr "Віджети в цьому місці будуть показані всюди"
-
-#: functions.php:211
-msgid "Top stories sidebar"
-msgstr ""
-
-#: functions.php:220 inc/class-wp-blog-slider.php:17
-msgid "Slider"
-msgstr "Слайдер"
-
-#: functions.php:229
+#: searchform.php:4 functions.php:210
 msgid "Search"
 msgstr "Пошук"
 
-#: index.php:71
-msgid "Category: "
-msgstr "Категорії: "
-
-#: index.php:75
-msgid "No Comments"
-msgstr "Коментарів немає"
-
-#: index.php:75
-msgid "1 Comment"
-msgstr "1 Комент"
-
-#: index.php:75
-msgid "% Comments"
-msgstr "% Коментарів"
-
-#: index.php:78
-msgid "Read more"
-msgstr "Читати дальше"
-
-#: index.php:93
+#: archive.php:26 index.php:33 search.php:28
 msgid "« new posts"
 msgstr "« новіші пости"
 
-#: index.php:94
+#: archive.php:27 index.php:34 search.php:29
 msgid "older posts »"
 msgstr "старіші пости »"
+
+#: functions.php:124
+msgid "Social acounts link"
+msgstr "Посилання на аккаунти в соціальних мережах"
+
+#: functions.php:129
+msgid "Url facebook"
+msgstr ""
+
+#: functions.php:133
+msgid "Url instagram"
+msgstr ""
+
+#: functions.php:137
+msgid "Url twitter"
+msgstr ""
+
+#: functions.php:142
+msgid "Facebook acount link"
+msgstr "Посилання на facebook аккаунт"
+
+#: functions.php:148
+msgid "Instagram acount link"
+msgstr "Посилання на instagram аккаунт"
+
+#: functions.php:154
+msgid "Twitter acount link"
+msgstr "Посилання на twitter аккаунт"
+
+#: functions.php:162
+msgid "Copyright"
+msgstr "Копірайт"
+
+#: functions.php:166
+msgid "2018 © Copyright <a href=\"\">Eterry</a>. All rights Reserved."
+msgstr ""
+
+#: functions.php:170
+msgid "Copyright text"
+msgstr "Текст копірайту"
+
+#: functions.php:183
+msgid "Main sidebar"
+msgstr "Головний сайдбар"
+
+#: functions.php:185 functions.php:194 functions.php:203 functions.php:212
+msgid "Widgets in this area will be shown everywhere."
+msgstr "Віджети в цьому місці будуть показані всюди"
+
+#: functions.php:192
+msgid "Top stories sidebar"
+msgstr ""
+
+#: functions.php:201 inc/class-wp-blog-slider.php:17
+msgid "Slider"
+msgstr "Слайдер"
+
+#: functions.php:659
+msgid " at "
+msgstr " о "
+
+#: functions.php:662
+msgid "(Edit)"
+msgstr "(Ред.)"
+
+#: comments.php:28
+msgid "Name:"
+msgstr "Ім'я:"
+
+#: comments.php:29
+msgid "E-mail:"
+msgstr ""
+
+#: comments.php:30
+msgid "Website:"
+msgstr "Вебсайт:"
+
+#: comments.php:32
+msgid "Comment:"
+msgstr "Коментар:"
+
+#: comments.php:33
+msgid "Write comment"
+msgstr "Написати коментар"
+
+#: comments.php:37
+msgid "Post comment"
+msgstr ""
+
+#: comments.php:67
+msgid "<< Older Comments"
+msgstr ""
+
+#: comments.php:68
+msgid "Newer Comments >>"
+msgstr ""
+
+#: comments.php:73
+msgid "Comments are closed."
+msgstr "Коментарі закриті"
+
+#: template-parts/content-search.php:15 template-parts/content.php:51
+msgid "Category: "
+msgstr "Категорії: "
+
+#: template-parts/content-search.php:18 template-parts/content.php:58
+msgid "Read more"
+msgstr "Читати дальше"
+
+#: template-parts/content.php:55
+msgid "No Comments"
+msgstr "Коментарів немає"
+
+#: template-parts/content.php:55
+msgid "1 Comment"
+msgstr "1 Комент"
+
+#: template-parts/content.php:55
+msgid "% Comments"
+msgstr "% Коментарів"
+
+#: template-parts/content-none.php:2
+msgid "Nothing Found!"
+msgstr "Нічого не знайдено!"
+
+#: inc/class-wp-blog-slider.php:29
+msgid "Top stories"
+msgstr "Головні статті"
 
 #: inc/class-wp-blog-slider.php:108
 msgid "Title:"
@@ -127,5 +167,5 @@ msgid "wp_blog"
 msgstr ""
 
 #. Author of the theme
-msgid "Анонім"
+msgid "Anonymous"
 msgstr ""

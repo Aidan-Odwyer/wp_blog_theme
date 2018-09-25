@@ -1,14 +1,14 @@
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: wp_blog\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-09-13 14:44+0000\n"
-"PO-Revision-Date: 2018-09-13 14:48+0000\n"
-"Last-Translator: eterry <vasiaobukh7@gmail.com>\n"
-"Language-Team: Українська\n"
-"Language: uk\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10 >= 2 && "
-"n%10<=4 &&(n%100<10||n%100 >= 20)? 1 : 2);\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -16,19 +16,19 @@ msgstr ""
 
 #: functions.php:124
 msgid "Slider title settings"
-msgstr "Настройки заголовка слайдера"
+msgstr ""
 
 #: functions.php:129 inc/class-wp-blog-slider.php:29
 msgid "Top stories"
-msgstr "Головні статті"
+msgstr ""
 
 #: functions.php:134
 msgid "Slider title"
-msgstr "Заголовок слайдера"
+msgstr ""
 
 #: functions.php:143
 msgid "Social acounts link"
-msgstr "Посилання на аккаунти в соціальних мережах"
+msgstr ""
 
 #: functions.php:148
 msgid "Url facebook"
@@ -44,19 +44,19 @@ msgstr ""
 
 #: functions.php:161
 msgid "Facebook acount link"
-msgstr "Посилання на facebook аккаунт"
+msgstr ""
 
 #: functions.php:167
 msgid "Instagram acount link"
-msgstr "Посилання на instagram аккаунт"
+msgstr ""
 
 #: functions.php:173
 msgid "Twitter acount link"
-msgstr "Посилання на twitter аккаунт"
+msgstr ""
 
 #: functions.php:181
 msgid "Copyright"
-msgstr "Копірайт"
+msgstr ""
 
 #: functions.php:185
 msgid "2018 © Copyright <a href=\"\">Eterry</a>. All rights Reserved."
@@ -64,15 +64,15 @@ msgstr ""
 
 #: functions.php:189
 msgid "Copyright text"
-msgstr "Текст копірайту"
+msgstr ""
 
 #: functions.php:202
 msgid "Main sidebar"
-msgstr "Головний сайдбар"
+msgstr ""
 
 #: functions.php:204 functions.php:213 functions.php:222 functions.php:231
 msgid "Widgets in this area will be shown everywhere."
-msgstr "Віджети в цьому місці будуть показані всюди"
+msgstr ""
 
 #: functions.php:211
 msgid "Top stories sidebar"
@@ -80,43 +80,43 @@ msgstr ""
 
 #: functions.php:220 inc/class-wp-blog-slider.php:17
 msgid "Slider"
-msgstr "Слайдер"
+msgstr ""
 
 #: functions.php:229
 msgid "Search"
-msgstr "Пошук"
+msgstr ""
 
 #: index.php:71
 msgid "Category: "
-msgstr "Категорії: "
+msgstr ""
 
 #: index.php:75
 msgid "No Comments"
-msgstr "Коментарів немає"
+msgstr ""
 
 #: index.php:75
 msgid "1 Comment"
-msgstr "1 Комент"
+msgstr ""
 
 #: index.php:75
 msgid "% Comments"
-msgstr "% Коментарів"
+msgstr ""
 
 #: index.php:78
 msgid "Read more"
-msgstr "Читати дальше"
+msgstr ""
 
 #: index.php:93
 msgid "« new posts"
-msgstr "« новіші пости"
+msgstr ""
 
 #: index.php:94
 msgid "older posts »"
-msgstr "старіші пости »"
+msgstr ""
 
 #: inc/class-wp-blog-slider.php:108
 msgid "Title:"
-msgstr "Заголовок: "
+msgstr ""
 
 #: inc/class-wp-blog-slider.php:111
 msgid "Number of posts to show:"

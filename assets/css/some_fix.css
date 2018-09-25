@@ -1,0 +1,3 @@
+section .container:before {
+    display: none;
+}
